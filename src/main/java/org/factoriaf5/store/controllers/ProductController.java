@@ -11,7 +11,7 @@ import java.awt.*;
 public class ProductController {
     @GetMapping("/health")
     public String check() {
-        String greeting = "Hello, I'm a server.";
+        String greeting = "Hello! I'm a server.";
         return greeting;
     }
-}
+};
