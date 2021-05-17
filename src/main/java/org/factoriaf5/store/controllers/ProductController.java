@@ -15,8 +15,8 @@ public class ProductController {
     private List<Product> products = new ArrayList<>();
     public ProductController(){ products = new ArrayList<>(); }
 
-    @GetMapping("/health")
-    public String check() {
-        return "ke lo ke bro";
+    @GetMapping("/products")
+    public List<Product> allProducts() {
+        return products;
     }
 };
