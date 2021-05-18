@@ -11,12 +11,17 @@ import java.util.List;
 
 @RestController
 public class ProductController {
+        private List<Product> products;
 
-    private List<Product> products = new ArrayList<>();
     public ProductController(){ products = new ArrayList<>(); }
 
     @GetMapping("/products")
     public List<Product> allProducts() {
         return products;
+    }
+
+    @PostMapping("/products") // añadir products usando public void
+    public void addProducts(Product product){
+        products.add(product) //añadir producto en la lista products
     }
 };

@@ -1,15 +1,18 @@
 package org.factoriaf5.store.model;
 
 public class Product {
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
 
-    public Product(String name,int price) {
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
     }
+        public int getPrice () {
+            return price;
+        }
+        public String getName () {
+            return name;
+        }
 
-    public String sayPrice(){
-        return "The product " + name + " costs " + price + "€." ;
-    }
-};
+}
