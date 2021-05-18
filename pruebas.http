@@ -1,6 +1,12 @@
+GET http://localhost:80/api/item?id=99
+Accept: application/json
+
+###
+
+
 POST http://localhost:8080/products
 Content-Type: application/x-www-form-urlencoded
 
-id=99&content=new-element
+name=CremaSolar&price=15
 
 ###
