@@ -7,6 +7,6 @@ Accept: application/json
 POST http://localhost:8080/products
 Content-Type: application/x-www-form-urlencoded
 
-name=CremaSolar&price=15
+name=cremasolar&price=15
 
 ###
